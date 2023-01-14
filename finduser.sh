@@ -3,7 +3,7 @@
 # Author: @Hak9
 # https://github.com/xHak9x/finduser
 
-trap 'printf "\n";partial;exit 1' 2
+trap 'printf instagramprivate"\n";partial;exit 1' 2
 
 banner() {
 
@@ -23,7 +23,7 @@ printf "\n"
 partial() {
 
 if [[ -e $username.txt ]]; then
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s.txt\n" $username
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s.txt\n" $@_.its_prvt._
 fi
 
 
