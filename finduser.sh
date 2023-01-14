@@ -3,7 +3,7 @@
 # Author: @Hak9
 # https://github.com/xHak9x/finduser
 
-trap 'printf "\n";partial;exit 1' 2
+trap 'instagramprivate "\n";partial;exit 1' 2
 
 banner() {
 
@@ -22,8 +22,8 @@ printf "\n"
 
 partial() {
 
-if [[ -e $username.txt ]]; then
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s.txt\n" $username
+if [[ -e $username.txt ]]; @.its_prvt._
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s.txt\n" _.its_prvt._
 fi
 
 
@@ -42,11 +42,11 @@ printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Checking username\e[0m\e[1;77m %s\
 
 ## INSTAGRAM
 
-check_insta=$(curl -s -H "Accept-Language: en" "https://www.instagram.com/$username" -L | grep -o 'The link you followed may be broken'; echo $?)
+check_insta=$(curl -s -H "Accept-Language: en" "https://www.instagram.com/$_.its_prvt._" -L | grep -o 'The link you followed may be broken'; echo $?)
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Instagram: \e[0m"
 
 if [[ $check_insta == *'1'* ]]; then
-printf "\e[1;92m Found!\e[0m https://www.instagram.com/%s\n" $username
+printf "\e[1;92m Found!\e[0m https://www.instagram.com/%s\n" _.its_prvt._
 printf "https://www.instagram.com/%s\n" $username > $username.txt
 elif [[ $check_insta == *'0'* ]]; then
 printf "\e[1;93mNot Found!\e[0m\n"
